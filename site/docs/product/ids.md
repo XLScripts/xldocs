@@ -4,197 +4,124 @@ title: Instant Domain Search
 sidebar_label: Instant Domain Search
 ---
 
-You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).
+## Introduction
 
-## Markdown Syntax
+![Instant Domain Search](https://i.imgur.com/ZHxF1W5.jpg)
 
-To serve as an example page when styling markdown based Docusaurus sites.
+**Instant Domain Search** is a script that packs all the power necessary to create a Domain Searching Website. You can earn money through **Affiliates** or **Ads** on your website.
+It features Clean Code, Easily Customized Templates, &amp; SEO Optimization features.
 
-## Headers
+This document will go over the Installation, Basic Usage &amp; Customization of the product along with some useful FAQs.
 
-# H1 - Create the best documentation
+## Installation
+We've tried our best to make installation as user-friendly as possible. Follow the steps down below to install your product:
 
-## H2 - Create the best documentation
+1. Download the latest package from the [Envato Market](https://codecanyon.net/item/instant-domain-search-script/27345338).
+2. Upload the **contents** of `upload.zip` to your **Website Root** (Typically your `public_html` directory)
+3. Go to `your-site.com/install` to begin the Installation Procedure.
+4. Upon clicking `Next`, you will be prompted to verify your license.
+    * You will need the Purchase Code provided to you by [Envato](https://codecanyon.net/item/instant-domain-search-script/27345338).
+    * Steps will be provided in order to generate an access token.
+    * After generating the token, Enter the purchase code and token into the respective fields.
+    * Click Next and your license will be verified!
+5. After license verification, a compatibility test will be started.
+    * If your server does not meet the minimum requirements, You will have to switch the server or host.
+6. Create a New Database and enter the Database Credentials in the next step.
+7. Choose the Website's Title, as-well as the Admin Account credentials and Installation will be finished.
+8. From here, you can either go visit your website at `your-site.com` or the Admin Panel at `your-site.com/admin`.
+9. We do not recommend deleting any files related to the installer, because they are used for Updating your script.
 
-### H3 - Create the best documentation
+## Creating New Pages
 
-#### H4 - Create the best documentation
+You can use the **Page Manager** inside **Instant Domain Search** to create your own Static Web Pages without any Programming knowledge.
 
-##### H5 - Create the best documentation
+Follow the steps below to create a basic web page:
 
-###### H6 - Create the best documentation
+* Login to your Administrator Panel.
+* Go to `Pages Settings`
+* Click on **Add New Page**.
+* Specify the Title of the new Page.
+* You can specify any Permalink (Slug) for this page, However it will be generated automatically if you leave it empty.
+* Write the content for this page using the editor.
+* Specify the position of the web page (Where to show the link to this page)
+* Click on **Add** to create your page.
 
----
 
-## Emphasis
+* Congratulations, Your page should now be live at `your-site.com/page/page-permalink`
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+## Adding Additional Styles, JavaScripts, Meta Tags & Other Settings
 
-Strong emphasis, aka bold, with **asterisks** or __underscores__.
+Often times, you will need to add additional **Stylesheets** or **JavaScripts** to your website.
 
-Combined emphasis with **asterisks and _underscores_**.
+The **Instant Domain Search** Admin Panel provides the ability the add these without having to change anything inside the code!
 
-Strikethrough uses two tildes. ~~Scratch this.~~
+To update these, follow the following steps:
 
----
+* Login to your Administrator Panel.
+* Go to **Header / Footer Scripts**.
+* You can add any **Meta Tags**, **Stylesheets** or **JavaScripts** inside these fields.
+    * **Header Scripts** content will only be included inside the head tag.
+    * **Footer Scripts** content will be included before the `</body>` tag.
 
-## Lists
 
-1. First ordered list item
-1. Another item
-   - Unordered sub-list.
-1. Actual numbers don't matter, just that it's a number
-   1. Ordered sub-list
-1. And another item.
+* You can edit your **Ads Settings**, **Analytics Settings**, **Mail Settings** and Other settings in the same way.
 
-* Unordered list can use asterisks
+## Updating Page Content
 
-- Or minuses
+You don't require any advanced knowledge of HTML / PHP to change the content of the pages.
 
-+ Or pluses
+If you just wanna add some **Additional Stylesheets or JavaScript**, you can do that from the Admin Panel. You can also edit **Ad settings**, **Page Title** &amp; other **basic information** from the Admin Panel. However, for advanced customization, you will need to edit the Templates.
 
----
+The **Templates** are placed inside the `YOUR_SITE/application/views/` directory. From here, you can edit the content of different files to achieve your goals.
 
-## Links
+* If you wanna edit the content of the **Main** page, you will need to edit `/views/main.php`
+* Similarly, for editing the **Header** or **Footer**, you will edit `/views/includes/header.php` or `/views/includes/footer.php`
+* We don't recommend editing any Admin Templates, however you can also edit those from the same location.
 
-[I'm an inline-style link](https://www.google.com/)
+## Updating Affiliate Links
 
-[I'm an inline-style link with title](https://www.google.com/ "Google's Homepage")
+**Instant Domain Search** allows you to earn money through affiliates in addition to ads. By default, The product uses [GoDaddy](https://godaddy.com) as the Affiliate Provider. However, you can easily edit these to use **Whichever Affiliate Program** you want. You can also use different affiliates for different TLDs to maximize profits.
 
-[I'm a reference-style link][arbitrary case-insensitive reference text]
+Follow the steps below to change your Affiliate Links:
 
-[I'm a relative reference to a repository file](../blob/master/LICENSE)
+* Login to your Administrator Panel.
+* Go to `TLDs Settings`
+* Find the TLD you wanna edit, and Click on the **Pencil** icon under the `Actions` column.
+* Scroll down to `TLD Affiliate Link`
+* You can add your Affiliate Link in this field.
+* You must replace the actual domain name with **{{domain_name}}** inside the textbox.
+    * For example
+    
+    `https://www.godaddy.com/domains/search.aspx?domainToCheck=google.com&checkAvail=1` 
+    
+    Becomes:
+    
+    `https://www.godaddy.com/domains/search.aspx?domainToCheck={{domain_name}}&checkAvail=1`
+* Congratulations, Your Affiliate Link should now be changed.
 
-[You can use numbers for reference-style link definitions][1]
+## FAQs
 
-Or leave it empty and use the [link text itself].
+Answers to some Frequently Asked Questions about the product.
 
-URLs and URLs in angle brackets will automatically get turned into links. http://www.example.com/ or <http://www.example.com/> and sometimes example.com (but not on GitHub, for example).
-
-Some text to show that the reference links can follow later.
-
-[arbitrary case-insensitive reference text]: https://www.mozilla.org/
-[1]: http://slashdot.org/
-[link text itself]: http://www.reddit.com/
-
----
-
-## Images
-
-Here's our logo (hover to see the title text):
-
-Inline-style: ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 1')
-
-Reference-style: ![alt text][logo]
-
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png 'Logo Title Text 2'
-
----
-
-## Code
-
-```javascript
-var s = 'JavaScript syntax highlighting';
-alert(s);
-```
-
-```python
-s = "Python syntax highlighting"
-print(s)
-```
-
-```
-No language indicated, so no syntax highlighting.
-But let's throw in a <b>tag</b>.
-```
-
-```js {2}
-function highlightMe() {
-  console.log('This line can be highlighted!');
-}
-```
-
----
-
-## Tables
-
-Colons can be used to align columns.
-
-| Tables        |      Are      |   Cool |
-| ------------- | :-----------: | -----: |
-| col 3 is      | right-aligned | \$1600 |
-| col 2 is      |   centered    |   \$12 |
-| zebra stripes |   are neat    |    \$1 |
-
-There must be at least 3 dashes separating each header cell. The outer pipes (|) are optional, and you don't need to make the raw Markdown line up prettily. You can also use inline Markdown.
-
-| Markdown | Less      | Pretty     |
-| -------- | --------- | ---------- |
-| _Still_  | `renders` | **nicely** |
-| 1        | 2         | 3          |
-
----
-
-## Blockquotes
-
-> Blockquotes are very handy in email to emulate reply text. This line is part of the same quote.
-
-Quote break.
-
-> This is a very long line that will still be quoted properly when it wraps. Oh boy let's keep writing to make sure this is long enough to actually wrap for everyone. Oh, you can _put_ **Markdown** into a blockquote.
-
----
-
-## Inline HTML
-
-<dl>
-  <dt>Definition list</dt>
-  <dd>Is something people use sometimes.</dd>
-
-  <dt>Markdown in HTML</dt>
-  <dd>Does *not* work **very** well. Use HTML <em>tags</em>.</dd>
-</dl>
-
----
-
-## Line Breaks
-
-Here's a line for us to start with.
-
-This line is separated from the one above by two newlines, so it will be a _separate paragraph_.
-
-This line is also a separate paragraph, but... This line is only separated by a single newline, so it's a separate line in the _same paragraph_.
-
----
-
-## Admonitions
-
-:::note
-
-This is a note
-
+### 1. Why are my scripts, analytics &amp; ads not getting updated?
+:::info
+If you're not able to update these settings, then your **Hosting Provider** might be blocking this using a Firewall to avoid **XSS** attacks.
+
+Please contact your Hosting Provider and ask them to unblock the following pages:
+* https://www.your-domain.com/ads/ads-settings
+* https://www.your-domain.com/analytics/analytics-settings
+* https://www.your-domain.com/scripts/header-footer
 :::
 
-:::tip
+### 2. How to remove Footer Vendor Links ?
+:::info
+To remove the Vendor (XL Scripts) links from the footer, you will need to edit the following files:
 
-This is a tip
-
+* `root/application/views/includes/footer-bar.php`
 :::
 
-:::important
+## Your issue is still not resolved ?
 
-This is important
+If the content inside this document does not resolve your issue, head over to [XL Scripts Support](https://xlscripts.com/support) &amp; Create a Support Ticket using your **Purchase Code**.
 
-:::
-
-:::caution
-
-This is a caution
-
-:::
-
-:::warning
-
-This is a warning
-
-:::
+We will make sure to assist you asap.
