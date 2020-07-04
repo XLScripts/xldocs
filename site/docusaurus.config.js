@@ -88,17 +88,17 @@ module.exports = {
       {
         docs: {
           // It is recommended to set document id as docs home page (`docs/` path).
-          homePageId: 'product/introduction',
+          homePageId: 'product/general',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/xlscripts/xlscripts.github.io/site/docs/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/xlscripts/xlscripts.github.io/site/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
